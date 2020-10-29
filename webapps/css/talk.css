@@ -1,0 +1,94 @@
+/* �S�̘̂g */
+.talk {
+	background-color:rgb(113,147,193); /* LINE���ۂ��w�i�F */
+	padding:1em;
+	overflow:auto;
+	max-width: 760px;
+	margin: auto;
+}
+/* ���̃g�[�N�{�b�N�X */
+.talk .talk_left:before { /* ���̊ۃA�C�R�� */
+	content:'';
+	display:flex;
+	width:50px;
+	height:50px;
+	vertical-align:top;
+	border-radius:50%;
+	background-size:cover;
+	background-image:url(icon_left.jpg); /* ���A�C�R���͂������ύX */
+}
+.talk .talk_left p:before {  /* ���ӂ������̍��O�p���`�� */
+	content: '';
+	position:absolute;
+	top:8px;
+	left:-20px;
+	border: 12px solid transparent;
+	border-right:12px solid white;
+}
+.talk .talk_left p { /* ���ӂ������̖{�� */
+	display:flex;
+	position:relative;
+	background-color:white;
+	border-radius:10px;
+	padding:10px;
+	margin:0 0 0 10px;
+}
+/* �E�̃g�[�N�{�b�N�X */
+.talk .talk_right:after { /* �E�̊ۃA�C�R�� */
+	content:'';
+	display:flex;
+	width:50px;
+	height:50px;
+	vertical-align:top;
+	border-radius:50%;
+	background-size:cover;
+	background-position:-10px;
+	background-image:url(icon_right.jpg);  /* ���A�C�R���͂������ύX */
+}
+.talk .talk_right {
+	display: flex;
+	justify-content: flex-end;
+	margin-top:1em;
+}
+.talk .talk_right p:after { /* �E�ӂ������̉E�O�p���`�� */
+	content: '';
+	position:absolute;
+	top:8px;
+	right:-20px;
+	border: 12px solid transparent;
+	border-left:12px solid #85e249;
+}
+.talk .talk_right p { /* �E�ӂ������̖{�� */
+	display:flex;
+	position:relative;
+	background-color:#85e249;
+	border-radius:10px;
+	padding:10px;
+	margin:0 10px 0 0;
+}
+
+.new_chat{
+	display: flex;
+	justify-content: space-around;
+	color: black;
+	padding:1em;
+	margin:auto;
+	background-color: whitesmoke;
+	max-width: 760px;
+}
+
+.new_chat #text{
+	border: 1px solid #cccccc;
+	line-height: 2em;
+	width:500px;
+	border-radius: 10px;
+}
+
+.new_chat #chat{
+	border: 1px solid #cccccc;
+	line-height: 2em;
+	color:whitesmoke;
+	max-width:100px;
+	border-radius: 10px;
+	background-color:#3333ff;
+}
